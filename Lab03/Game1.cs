@@ -2,6 +2,8 @@
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Input;
 using System;
+using System.Drawing;
+using System.Numerics;
 
 namespace Lab03
 {
@@ -106,8 +108,9 @@ namespace Lab03
             //Sign
             spriteBatch.Draw(myTexture, new Vector2(64*4,64*6), new Rectangle(64*0,64*1,64,64), Color.White);
             //cloud
-
+            for(int i=0; i<4;i++)
             {
+                spriteBatch.Draw(cloudTexture, cloudPos[i], null, Color.White, 0, Vector2.Zero, scaleCloud[i], 0, 0);
             }                    
             spriteBatch.End();
             base.Draw(gameTime);
