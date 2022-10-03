@@ -106,7 +106,7 @@ namespace Lab03
             //Sign
             spriteBatch.Draw(myTexture, new Vector2(64*4,64*6), new Rectangle(64*0,64*1,64,64), Color.White);
             //cloud
-            for(int i = 0; i<4; i++)
+
             {
             }                    
             spriteBatch.End();
